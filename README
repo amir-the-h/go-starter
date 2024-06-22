@@ -1,0 +1,72 @@
+# Discord Fortnite
+
+A Go application designed to integrate Fortnite game data into Discord.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Go 1.22.4 or higher
+- Git
+
+### Installing
+
+First, clone the repository to your local machine:
+
+```sh
+git clone https://github.com/amir-the-h/discord-fortnite.git
+cd discord-fortnite
+```
+
+Then, install the necessary dependencies:
+
+```sh
+make install
+```
+
+### Running the Application
+
+To run the application in development mode:
+
+```sh
+make run
+```
+
+### Adding a Go Package
+
+If you need to add a Go package on demand:
+
+```sh
+make addpkg PKG=<package-name>
+```
+
+Replace `<package-name>` with the actual package you wish to add. For example, `make addpkg PKG=github.com/example/package`.
+
+### Building the Application
+
+To build the application and output the binary to the `./dist` directory:
+
+```sh
+make build APP_NAME=<your-app-name>
+```
+
+Replace `<your-app-name>` with the desired name for your application binary. If not specified, the default name `amazing_app` will be used.
+
+### Deploying the Application
+
+To deploy the built application to the /usr/local/bin directory:
+
+```sh
+make deploy APP_NAME=<your-app-name>
+```
+
+### Build and Deploy
+
+To combine the build and deploy operations:
+
+```sh
+make build_and_deploy APP_NAME=<your-app-name>
+```
+
