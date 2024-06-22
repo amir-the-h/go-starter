@@ -16,8 +16,8 @@ These instructions will get you a copy of the project up and running on your loc
 First, clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/amir-the-h/discord-fortnite.git
-cd discord-fortnite
+git clone https://github.com/amir-the-h/go-starter.git
+cd go-starter
 ```
 
 Then, install the necessary dependencies:
