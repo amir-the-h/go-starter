@@ -16,12 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 First, clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/amir-the-h/go-starter.git
-```
-
-Rename the project directory to your desired project name:
-```sh
-mv go-starter <your-project-name>
+git clone https://github.com/amir-the-h/go-starter.git <your-project-name>
 ```
 
 Navigate to the project directory:
