@@ -1,6 +1,6 @@
-# Discord Fortnite
+# GO STARTER
 
-A Go application designed to integrate Fortnite game data into Discord.
+Your amazing app description
 
 ## Getting Started
 
@@ -17,13 +17,36 @@ First, clone the repository to your local machine:
 
 ```sh
 git clone https://github.com/amir-the-h/go-starter.git
-cd go-starter
 ```
 
-Then, install the necessary dependencies:
-
+Rename the project directory to your desired project name:
 ```sh
-make install
+mv go-starter <your-project-name>
+```
+
+Navigate to the project directory:
+```sh
+cd <your-project-name>
+```
+
+Remove the existing git origin:
+```sh
+rm -rf .git
+```
+
+Initialize a new git repository:
+```sh
+git init
+```
+
+Add the new git origin:
+```sh
+git remote add origin <your-git-repo-url>
+```
+
+Initialize the go module:
+```sh
+make init MODULE_NAME=<your-module-name>
 ```
 
 ### Running the Application
@@ -45,6 +68,8 @@ make addpkg PKG=<package-name>
 Replace `<package-name>` with the actual package you wish to add. For example, `make addpkg PKG=github.com/example/package`.
 
 ### Building the Application
+
+For ease of use in future operations, you can set the `APP_NAME` environment variable to your desired application name. This will be used in the build and deploy operations. If you do not set the `APP_NAME` environment variable, the default name `amazing_app` will be used and you have to specify the application name in the build and deploy commands.
 
 To build the application and output the binary to the `./dist` directory:
 

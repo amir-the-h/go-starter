@@ -1,7 +1,11 @@
-.PHONY: addpkg install run build
+.PHONY: init addpkg install run build deploy build_and_deploy
 
 # Default app name, can be overridden with `make build APP_NAME=myapp`
 APP_NAME ?= amazing_app
+
+# Initialize a new Go module. Usage: make init
+init:
+	go mod init $(MODULE_NAME)
 
 # Add a Go package on demand. Usage: make addpkg PKG=github.com/example/package
 addpkg:
